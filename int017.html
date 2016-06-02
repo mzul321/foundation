@@ -1,0 +1,808 @@
+<!doctype html>
+<html class="no-js" lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Foundation for Sites</title>
+    <link rel="stylesheet" href="css/foundation.css">
+    <link rel="stylesheet" href="css/app.css">
+</head>
+
+<body>
+    <!-- ************** NAVIGATION ************** -->
+    <div class="title-bar" data-responsive-toggle="mainnav" data-hide-for="medium">
+        <button class="menu-icon" type="button" data-toggle></button>
+        <div class="title-bar-title">Menu</div>
+    </div>
+    <div class="top-bar" id="mainnav">
+        <div class="top-bar-left">
+            <ul class="dropdown menu" data-dropdown-menu>
+                <li><img src="img/integra_logo.png" width="150px" /></li>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="interfaces.html">INTERFACE</a></li>
+                <li><a href="#">CLOUD</a></li>
+                <li><a href="#">INCIDENT</a></li>
+                <li><a href="#">REQUEST</a></li>
+                <li><a href="#">REPORTING</a></li>
+            </ul>
+        </div>
+    </div>
+    <!-- ****************************************** -->
+    <!-- CONTENT -->
+    <div class="row">
+        <p>
+            <br>
+        </p>
+    </div>
+    <div class="row" style="max-width: 100%">
+        <div class="large-2 columns">
+            <ul class="vertical menu" data-accordion-menu>
+                <li>
+                    <a href="#">INT017</a>
+                    <ul class="menu vertical nested is-active">
+                        <li class="active"><a href="int017.html">Live</a></li>
+                        <li><a href="#">Workflows</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">INT026</a>
+                    <ul class="menu vertical nested">
+                        <li><a href="#">Live</a></li>
+                        <li><a href="#">Workflows</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">INT012</a>
+                    <ul class="menu vertical nested">
+                        <li><a href="#">Live</a></li>
+                        <li><a href="#">Workflows</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">INT049</a>
+                    <ul class="menu vertical nested">
+                        <li><a href="#">Live</a></li>
+                        <li><a href="#">Workflows</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <div class="large-10 small-centered columns">
+            <div class="row">
+                <div class="large-12 columns" style="text-align: center">
+                    <h3>INT017 LIVE</h3>
+                </div>
+            </div>
+            <div class="row column" style="text-align: center">
+                <div class="medium-2 columns">
+                    <a href="javascript:slide('inbounddetail');">
+                        <div class="callout success">
+                            <p>INBOUND</p>
+                            <h4>2</h4>
+                            <p>INCOMING</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="medium-2 columns">
+                    <a href="javascript:slide('ctrlmdetail');">
+                        <div class="callout success">
+                            <p>CONTROL-M</p>
+                            <h4>1/2</h4>
+                            <p>COMPLETED</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="medium-2 columns">
+                    <a href="javascript:slide('datastagedetail');">
+                        <div class="callout alert">
+                            <p>DATASTAGE</p>
+                            <h4>2/7</h4>
+                            <p>COMPLETED</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="medium-2 columns">
+                    <a href="javascript:slide('outbounddetail');">
+                        <div class="callout alert">
+                            <p>OUTBOUND</p>
+                            <h4>2</h4>
+                            <p>TO CLOUD</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="medium-4 columns ">
+                    <div class="medium-6 columns">
+                        <a href="javascript:slide('logdetail');">
+                            <div class="callout warning">
+                                <h4>3</h4>
+                                <p>LOG ERRORS</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="medium-6 columns">
+                        <a href="javascript:slide('rejectdetail');">
+                            <div class="callout success">
+                                <h4>10</h4>
+                                <p>REJECT FILES</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="row column">
+                <hr>
+            </div>
+            <div class="row ifacedetails" id="inbounddetail">
+                <div class="row">
+                    <div class="large-12 small-centered column">
+                        <div class="large-7 columns">
+                            <span><h5>INBOUND FTP</h5></span>
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th>#</th>
+                                        <th>Filename</th>
+                                        <th>Last Modified</th>
+                                        <th>Size</th>
+                                        <th>Rows</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>1</td>
+                                        <td>GLBR_0040_ACC_TB.dat</td>
+                                        <td>Apr 8 09:40</td>
+                                        <td>2.0 KB</td>
+                                        <td>589</td>
+                                    </tr>
+                                    <tr>
+                                        <td>2</td>
+                                        <td>ps_gl_account_tbl.txt</td>
+                                        <td>Apr 8 09:45</td>
+                                        <td>2.7 MB</td>
+                                        <td>11220</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="large-5 columns">
+                            <div id="chart_inbound"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row column">
+                    <br>
+                </div>
+            </div>
+            <div class="row ifacedetails" id="ctrlmdetail">
+                <div class="row">
+                    <div class="large-12 small-centered column">
+                        <div class="large-7 columns">
+                            <span><h5>CTRL-M JOBS</h5></span>
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th>#</th>
+                                        <th>Job Name</th>
+                                        <th>Start Date</th>
+                                        <th>End Date</th>
+                                        <th>Elapsed</th>
+                                        <th>Status</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>1</td>
+                                        <td>PHIB_INT017_FTPNominals_EXT</td>
+                                        <td>Apr 8 09:42</td>
+                                        <td>Apr 8 10:03</td>
+                                        <td>1h 18m</td>
+                                        <td align="center">
+                                            <button class="success button">Completed</button>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>2</td>
+                                        <td>PHIB_INT017_FTPNominals_LD</td>
+                                        <td>Apr 8 10:45</td>
+                                        <td>Apr 8 12:48</td>
+                                        <td>2h 3m</td>
+                                        <td align="center">
+                                            <button class="alert button">Failed</button>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="large-5 columns">
+                            <div id="chart_controlm" style="width: 100%; height: 100%;"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <br>
+                </div>
+            </div>
+            <div class="row ifacedetails" id="datastagedetail">
+                <div class="row">
+                    <div class="large-12 small-centered column">
+                        <div class="large-7 columns">
+                            <span><h5>DATASTAGE JOBS</h5></span>
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th>#</th>
+                                        <th>Sequence Name</th>
+                                        <th>Start Date</th>
+                                        <th>End Date</th>
+                                        <th>Elapsed</th>
+                                        <th>Status</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>1</td>
+                                        <td>dsqFtpNominalsEXT</td>
+                                        <td>Apr 8 09:42</td>
+                                        <td>Apr 8 11:43</td>
+                                        <td>2h 2m</td>
+                                        <td align="center">
+                                            <button class="success button">Completed</button>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>2</td>
+                                        <td>dsqGhrsEXT</td>
+                                        <td>Apr 8 11:45</td>
+                                        <td>Apr 8 14:56</td>
+                                        <td>3h 11m</td>
+                                        <td align="center">
+                                            <button class="success button">Completed</button>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>3</td>
+                                        <td>dsqLPqsMain</td>
+                                        <td>Apr 8 10:02</td>
+                                        <td></td>
+                                        <td></td>
+                                        <td align="center">
+                                            <a href="#" data-open="logModal" id="dsModal">
+                                                <button class="alert button">Failed</button>
+                                            </a>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="large-5 columns">
+                            <div id="chart_dsjob" style="width: 100%; height: 100%;"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <br>
+                </div>
+            </div>
+            <div class="row ifacedetails" id="outbounddetail">
+                <div class="row">
+                    <div class="large-12 small-centered column">
+                        <div class="large-7 columns">
+                            <span><h5>OUTBOUND FTP</h5></span>
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th>#</th>
+                                        <th>Filename</th>
+                                        <th>Last Modified</th>
+                                        <th>Size</th>
+                                        <th>Rows</th>
+                                        <th>Status</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>1</td>
+                                        <td>Nominals_FTP_DRM_20160310061151.txt</td>
+                                        <td>Apr 8 09:50</td>
+                                        <td>1.6 MB</td>
+                                        <td>19566</td>
+                                        <td align="center">
+                                            <button class="success button">Completed</button>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>2</td>
+                                        <td>Nominals_FTP_DRM_20160311041151.txt</td>
+                                        <td>Apr 8 09:42</td>
+                                        <td>1.6 MB</td>
+                                        <td>19067</td>
+                                        <td align="center">
+                                            <button class="alert button">Failed</button>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>3</td>
+                                        <td>Nominals_FTP_DRM_20160311131151.txt</td>
+                                        <td>Apr 8 09:42</td>
+                                        <td>1.8 MB</td>
+                                        <td>23433</td>
+                                        <td align="center">
+                                            <button class="success button">Completed</button>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="large-5 columns">
+                            <div id="chart_outbound" style="width: 100%; height: 100%;"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <br>
+                </div>
+            </div>
+            <div class="row ifacedetails" id="logdetail">
+                <div class="row">
+                    <div class="large-12 small-centered column">
+                        <div class="large-7 columns">
+                            <span><h5>LOG FILES</h5></span>
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th>#</th>
+                                        <th>Filename</th>
+                                        <th>Last Modified</th>
+                                        <th>Status</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>1</td>
+                                        <td>INT017_PUSH_file_movement_08_Feb_2016_09_50_22.log</td>
+                                        <td>Apr 8 09:50</td>
+                                        <td align="center">
+                                            <button class="success button">Completed</button>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>2</td>
+                                        <td>errorlogdsqFtpNominalsEXT110320016.log</td>
+                                        <td>Apr 8 09:42</td>
+                                        <td align="center">
+                                            <button class="alert button">Failed</button>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>3</td>
+                                        <td>errorlogdsqFtpNominalsEXT110320016.log</td>
+                                        <td>Apr 8 09:42</td>
+                                        <td align="center">
+                                            <button class="alert button">Failed</button>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>4</td>
+                                        <td>errorlogdsqFtpNominalsLOD110620016.log</td>
+                                        <td>Apr 8 09:43</td>
+                                        <td align="center">
+                                            <button class="alert button">Failed</button>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>5</td>
+                                        <td>INT017_PUSH_file_movement_08_Feb_2016_09_48_20.log</td>
+                                        <td>Apr 8 09:42</td>
+                                        <td align="center">
+                                            <button class="success button">Completed</button>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="large-5 columns">
+                            <div id="chart_log" style="width: 100%; height: 100%;"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <br>
+                </div>
+            </div>
+            <div class="row ifacedetails" id="rejectdetail">
+                <div class="row">
+                    <div class="large-12 small-centered column">
+                        <div class="large-7 columns">
+                            <span><h5>REJECTED FILES</h5></span>
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th>#</th>
+                                        <th>Filename</th>
+                                        <th>Last Modified</th>
+                                        <th>Size</th>
+                                        <th>Rows</th>
+                                        <th>Status</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>1</td>
+                                        <td>rej_FTP_NOMINAL_NODE_REJECT20160310.log</td>
+                                        <td>Apr 8 09:50</td>
+                                        <td>1.2 K</td>
+                                        <td>25</td>
+                                        <td align="center">
+                                            <button class="warning button">Rejected</button>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>2</td>
+                                        <td>rej_FTP_NOMINAL_NODE_REJECT20160310.log</td>
+                                        <td>Apr 8 09:42</td>
+                                        <td>0 B</td>
+                                        <td>0</td>
+                                        <td align="center">
+                                            <button class="warning button">Rejected</button>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>3</td>
+                                        <td>rej_FTP_NOMINAL_REL_REJECT20160310.log</td>
+                                        <td>Apr 8 09:42</td>
+                                        <td>0 B</td>
+                                        <td>0</td>
+                                        <td align="center">
+                                            <button class="warning button">Rejected</button>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>4</td>
+                                        <td>rej_FTP_NOMINAL_NODE_REJECT20160310.log</td>
+                                        <td>Apr 8 09:50</td>
+                                        <td>0 B</td>
+                                        <td>0</td>
+                                        <td align="center">
+                                            <button class="warning button">Rejected</button>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>5</td>
+                                        <td>rej_FTP_NOMINAL_REL_REJECT20160310.log</td>
+                                        <td>Apr 8 09:42</td>
+                                        <td>122 B</td>
+                                        <td>8</td>
+                                        <td align="center">
+                                            <button class="warning button">Rejected</button>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>6</td>
+                                        <td>rej_FTP_NOMINAL_NODE_REJECT20160310.log</td>
+                                        <td>Apr 8 09:42</td>
+                                        <td>1.2 K</td>
+                                        <td>25</td>
+                                        <td align="center">
+                                            <button class="warning button">Rejected</button>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>7</td>
+                                        <td>rej_FTP_NOMINAL_NODE_REJECT20160310.log</td>
+                                        <td>Apr 8 09:50</td>
+                                        <td>1.2 K</td>
+                                        <td>25</td>
+                                        <td align="center">
+                                            <button class="warning button">Rejected</button>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>8</td>
+                                        <td>rej_FTP_NOMINAL_NODE_REJECT20160310.log</td>
+                                        <td>Apr 8 09:42</td>
+                                        <td>122 B</td>
+                                        <td>8</td>
+                                        <td align="center">
+                                            <button class="warning button">Rejected</button>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>9</td>
+                                        <td>rej_FTP_NOMINAL_NODE_REJECT20160310.log</td>
+                                        <td>Apr 8 09:42</td>
+                                        <td>0 B</td>
+                                        <td>0</td>
+                                        <td align="center">
+                                            <button class="warning button">Rejected</button>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>10</td>
+                                        <td>rej_FTP_NOMINAL_NODE_REJECT20160310.log</td>
+                                        <td>Apr 8 09:42</td>
+                                        <td>0 B</td>
+                                        <td>0</td>
+                                        <td align="center">
+                                            <button class="warning button">Rejected</button>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="large-5 columns">
+                            <div id="chart_reject" style="width: 100%; height: 100%;"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <br>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ****************************************** -->
+
+    <!-- ****************** MODAL ************************ -->
+    <div id="revealLayer"></div>
+    <div class="full reveal" id="logModal" data-reveal>
+        <button class="close-button" data-close aria-label="Close reveal" type="button">
+            <span aria-hidden="true">&times;</span>
+        </button>
+    </div>
+    <!-- ****************************************** -->
+
+    <script src="js/vendor/jquery.js"></script>
+    <script src="js/vendor/what-input.js"></script>
+    <script src="js/vendor/foundation.js"></script>
+    <script src="js/app.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type="text/javascript" src="js/vendor/Chart.js"></script>
+    <script type="text/javascript">
+    function drawcharts() {
+
+        var data1 = google.visualization.arrayToDataTable(
+            [
+                ['Year', 'jobFTPBSSource', 'jobFTPBSPnL'],
+                ['29/03', 130, 245],
+                ['30/03', 160, 271],
+                ['31/03', 145, 260],
+                ['05/04', 190, 272],
+                ['06/04', 145, 320],
+                ['08/04', 178, 275]
+            ]);
+
+        var options1 = {
+            animation: {
+                duration: 1000,
+                easing: 'out',
+            },
+            legend: {
+                position: 'bottom'
+            },
+            title: 'Total Completion (in Mins) Per Day By Job',
+            hAxis: {
+                title: 'Date',
+                titleTextStyle: {
+                    color: 'black'
+                }
+            },
+            vAxis: {
+                title: 'Job Elapsed (in Mins)',
+                titleTextStyle: {
+                    color: 'black'
+                }
+            }
+        };
+
+        var data2 = google.visualization.arrayToDataTable(
+            [
+                ['Year', 'dsqFtpNominalsEXT', 'dsqGhrsEXT', 'dsqLPqsMain'],
+                ['29/03', 50, 30, 34],
+                ['30/03', 80, 60, 87],
+                ['31/03', 120, 50, 98],
+                ['05/04', 170, 80, 40],
+                ['06/04', 90, 100, 50],
+                ['08/04', 60, 40, 67]
+            ]);
+
+        var options2 = {
+            legend: {
+                position: 'bottom'
+            },
+            title: 'Total Completion (in Mins) Per Day By Job',
+            hAxis: {
+                title: 'Date',
+                titleTextStyle: {
+                    color: 'black'
+                }
+            },
+            vAxis: {
+                title: 'DS Seq. Elapsed (in Mins)',
+                titleTextStyle: {
+                    color: 'black'
+                }
+            }
+        };
+
+        var data3 = google.visualization.arrayToDataTable(
+            [
+                ['Year', 'File'],
+                ['29/03', 3],
+                ['30/03', 2],
+                ['31/03', 2],
+                ['05/04', 2],
+                ['06/04', 3],
+                ['08/04', 2]
+            ]);
+
+        var options3 = {
+            title: 'Total File Count per Day',
+            height: 200,
+            width: 450,
+            /*legend: {
+                position: 'bottom'
+            },*/
+            hAxis: {
+                title: 'Date',
+                titleTextStyle: {
+                    color: 'black'
+                }
+            },
+            vAxis: {
+                title: 'Max. File Count',
+                titleTextStyle: {
+                    color: 'black'
+                }
+            }
+        };
+
+        var chartA = new google.visualization.AreaChart(document.getElementById('chart_controlm'));
+        chartA.draw(data1, options1);
+
+        var chartB = new google.visualization.AreaChart(document.getElementById('chart_dsjob'));
+        chartB.draw(data2, options2);
+
+        var chartC = new google.visualization.AreaChart(document.getElementById('chart_inbound'));
+        chartC.draw(data3, options3);
+
+    }
+
+    google.setOnLoadCallback(drawcharts);
+    google.load("visualization", "1", {
+        packages: ["corechart"]
+    });
+    </script>
+    <script type="text/javascript">
+    function drawcharts2() {
+
+        var data1 = google.visualization.arrayToDataTable(
+            [
+                ['Year', 'File'],
+                ['29/03', 3],
+                ['30/03', 2],
+                ['31/03', 2],
+                ['05/04', 2],
+                ['06/04', 3],
+                ['08/04', 2]
+            ]);
+
+        var options1 = {
+            title: 'Total File Count per Day',
+            legend: {
+                position: 'bottom'
+            },
+            hAxis: {
+                title: 'Date',
+                titleTextStyle: {
+                    color: 'black'
+                }
+            },
+            vAxis: {
+                title: 'Max. File Count',
+                titleTextStyle: {
+                    color: 'black'
+                }
+            }
+        };
+
+        var data2 = google.visualization.arrayToDataTable(
+            [
+                ['Year', 'File'],
+                ['29/03', 3],
+                ['30/03', 2],
+                ['31/03', 2],
+                ['05/04', 2],
+                ['06/04', 3],
+                ['08/04', 2]
+            ]);
+
+        var options2 = {
+            title: 'Total File Count per Day',
+            legend: {
+                position: 'bottom'
+            },
+            hAxis: {
+                title: 'Date',
+                titleTextStyle: {
+                    color: 'black'
+                }
+            },
+            vAxis: {
+                title: 'Max. File Count',
+                titleTextStyle: {
+                    color: 'black'
+                }
+            }
+        };
+
+        var data3 = google.visualization.arrayToDataTable(
+            [
+                ['Year', 'File'],
+                ['29/03', 10],
+                ['30/03', 8],
+                ['31/03', 7],
+                ['05/04', 6],
+                ['06/04', 5],
+                ['08/04', 4]
+            ]);
+
+        var options3 = {
+            title: 'Total File Count per Day',
+            legend: {
+                position: 'bottom'
+            },
+            hAxis: {
+                title: 'Date',
+                titleTextStyle: {
+                    color: 'black'
+                }
+            },
+            vAxis: {
+                title: 'Max. File Count',
+                titleTextStyle: {
+                    color: 'black'
+                }
+            }
+        };
+
+        var chartA = new google.visualization.AreaChart(document.getElementById('chart_outbound'));
+        chartA.draw(data1, options1);
+
+        var chartB = new google.visualization.AreaChart(document.getElementById('chart_log'));
+        chartB.draw(data2, options2);
+
+        var chartC = new google.visualization.AreaChart(document.getElementById('chart_reject'));
+        chartC.draw(data3, options3);
+
+    }
+
+    google.setOnLoadCallback(drawcharts2);
+    google.load("visualization", "1", {
+        packages: ["corechart"]
+    });
+    </script>
+    <script type="text/javascript">
+    function slide(thechosenone) {
+        $('.ifacedetails').each(function(index) {
+            if ($(this).attr("id") == thechosenone) {
+                $(this).toggle("slow", function() {});
+                $('html, body').animate({
+                    scrollTop: $(this).offset().top
+                }, 1000);
+            }
+        });
+    }
+
+    $(document).ready(function() {
+        $("#dsModal").click(function() {
+            $('#revealLayer').empty();
+            $('#revealLayer').load('ds_detail.html');
+            $('#revealLayer').appendTo('#logModal');
+            $('#logModal').reveal();
+            return false;
+        });
+    });
+    </script>
+</body>
+
+</html>
